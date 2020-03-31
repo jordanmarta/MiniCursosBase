@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript básico</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://rocketseat.com.br/');
+        linkElement.setAttribute('title', 'titulo de teste');
+        linkElement.setAttribute('text', 'Acessar site da rocketseat');
+
+
+        // var textElement = document.createTextNode('Acessar site da rocketseat');
+        // linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app'); 
+        containerElement.appendChild(linkElement);
+    </script>
+</body>
+</html>
